@@ -1,0 +1,9 @@
+#2-1 
+me_message = "I want to eat you"
+print(me_message)
+
+#2-2
+me_message = "Hello there man!!"
+print(me_message)
+me_message = "hello dave you want to play a game?"
+print(me_message)

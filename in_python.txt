@@ -1,0 +1,6 @@
+In python I finally learned how to properly implement for and while loops.
+In python I learned how to create classes within modules.
+In python I now understand how to create programs though in a mock capacity.
+In python I can now create functions successfully (which was a huge block in R).
+In python I can now create input() statements.
+In python I now understand boolean statements.

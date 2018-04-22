@@ -1,0 +1,45 @@
+##3-4 
+guest = ["Squirt", "Jim Riems", "Stegmeier", "Rain on the Earth", "McKinny"]
+for guest in guest:
+	print("Hi " + guest + ", how's everything going? \nI have to say it has been far too long. \nI'm just wandering, do you have any plans today?")
+
+##3-5 
+guest = ["Squirt", "Jim Riems", "Stegmeier", "Rain on the Earth", "McKinny"]
+print(guest)
+non_guest = guest.pop(1)
+print(guest)
+guest.append("Marilyn")
+print(guest)
+print(non_guest)
+for guest in guest:
+	print("Hi " + guest + ", how's everything going? \nI have to say it has been far too long. \nI'm just wandering, do you have any plans today? \nOh and before I forget, it seems that " + non_guest + " can't make it our dinner celebration.\n")
+
+##3-6 
+guest = ["Squirt", "Stegmeier", "Rain on the Earth", "McKinny", "Marilyn"]
+guest.insert(0, "Daryl Jumbo")
+guest.insert(2, "Ari Encombe")
+guest.append("Gary Busy")
+print(guest)
+for guest in guest:
+	print("Hi " + guest + ", how's everything going? \nI have to say it has been far too long. \nI'm just wandering, do you have any plans today? \nOh and before I forget, it seems that " + non_guest + " can't make it our dinner celebration.\n And due to me finding a larger table, we can now have over our long lost friends Daryl, Ari, and Gary. \nSee you all soon!\n")
+
+##3-7
+guest = ["Squirt", "Stegmeier", "Rain on the Earth", "McKinny", "Marilyn"]
+guest.insert(0, "Daryl Jumbo")
+guest.insert(2, "Ari Encombe")
+guest.append("Gary Busy")
+print(guest)
+none_guest = ["Squirt", "Stegmeier", "McKinny", "Gary Busy", "Daryl Jumbo", "Marilyn"]
+for none_guest in none_guest:
+	guest.remove(none_guest)
+	print("Hi " + none_guest + ", \nI'm sad to say this, but due to my new table not being in in time for the party, you are not allowed to be apart of my get to gather. \nI so sorry for any inconvenience this put you through and hopefully I'll see you soon.\n")
+#I found out that remove() works way better than pop() for this application.
+
+for guest in guest:
+	print("Hi " + guest + "!!!\n I just wanted to say that I'm very excited about seeing you this week. \nattached to this message are the directions to my new house. See you soon!!!\n") 
+
+
+
+
+
+

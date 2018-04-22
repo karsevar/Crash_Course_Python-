@@ -1,0 +1,104 @@
+##chapter 9 classes:
+##Creating a using a class:
+#For this section the author will make a new class within the 
+#python console called dog. Will need to see he this is established.
+
+##Creating the dog class:
+class Dog():
+	"""A simple attempt to model a dog."""
+	def __init__(self, name, age):
+		"""Initialize name and age attributes"""
+		self.name = name 
+		self.age = age 
+
+	def sit(self):
+		"""simulate a dog sitting in response to a command"""
+		print(self.name.title() + " is now sitting.")
+
+	def roll_over(self):
+		"""simulate rolling over in response to a command"""
+		print(self.name.title() + " roll over!")
+
+##The __init__() method:
+#To look into the inner workings of a class assignment function make sure to 
+#refer back to page 163 of chapter 9.
+
+##Making an instance from a class:
+my_dog = Dog("Willie", 6)
+
+print("My dog's name is " + my_dog.name.title() + ".")
+print("My dog is " + str(my_dog.age) + " years old.")#so in this case the self 
+#argument is passed to the object my_dog. Will need to look into this.
+
+#(important style guide) capital names refer to classes and lower case names 
+#refer to single instances created from a class.
+
+##Accessing Attributes:
+print(my_dog.name)
+print(my_dog.age)#Python uses dot notation to access the attributes within 
+#the class instance my_dog. 
+
+##Calling methods:
+my_dog.sit()
+my_dog.roll_over()
+
+##Creating multiple instances:
+my_dog = Dog("willie",6)
+your_dog = Dog("lucy", 3)
+print("My dog's name is " + my_dog.name.title() + ".")
+print("My dog is " + str(my_dog.age) + " years old.")
+print("\nYour dog's name is " + your_dog.name.title() + ".")
+print("Your dog's age is " + str(your_dog.age) + " years old.")
+your_dog.sit()
+
+##Working with classes and instances:
+
+##The Car class:
+class Car():
+	"""A simple attempt to represent a car."""
+
+	def __init__(self, make, model, year):
+		"""Initialize attributes to describe a car."""
+		self.make = make
+		self.model = model
+		self.year = year 
+
+	def get_descriptive_name(self):
+		"""Return a neatly formatted descriptive name."""
+		long_name = str(self.year) + " " + self.make + " " + self.model 
+		return long_name.title()
+
+my_new_car = Car("audi","a4", 2016)
+print(my_new_car.get_descriptive_name())
+
+##Setting a default value for the attribute:
+#The author is describing this characteristic through having the Car class 
+#read odometer values.
+class Car():
+	"""A simple attempt to represent a car."""
+
+	def __init__(self, make, model, year):
+		"""Initialize attributes to describe a car."""
+		self.make = make
+		self.model = model
+		self.year = year
+		self.odometer_reading = 0 
+
+	def get_descriptive_name(self):
+		"""Return a neatly formatted descriptive name."""
+		long_name = str(self.year) + " " + self.make + " " + self.model 
+		return long_name.title()
+
+	def read_odometer(self):
+		"""print a statement showing the car's mileage."""
+		print("this car has " + str(self.odometer_reading) + " miles on it.")
+
+my_new_car = Car("audi","a4", 2016)
+print(my_new_car.get_descriptive_name())
+my_new_car.read_odometer()
+
+##Modifying attribute values:
+my_new_car.odometer_reading = 23
+my_new_car.read_odometer()
+
+
